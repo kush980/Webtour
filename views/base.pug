@@ -1,0 +1,30 @@
+doctype html
+html 
+    block head 
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+        link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
+        title Natours | #{title}
+    body
+
+        //HEADER
+        include _header
+         // CONTENT
+        block content
+            h1 This is a place holder heading
+
+        // FOOTER
+        include _footer
+
+        script(src='https://js.stripe.com/v3/')
+        script(src='/js/bundle.js')
+        //-axios cdn
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous")
+        //- script(src='/js/mapbox.js')
+        //- script(src='/js/login.js')
+        //-sudo npm i parcel-bundler --save-dev for web bundling so we dont have a billion js files down here 
+        //- go into package.json to update scripts
+    
+        //-npm run watch:js, builds file for you
